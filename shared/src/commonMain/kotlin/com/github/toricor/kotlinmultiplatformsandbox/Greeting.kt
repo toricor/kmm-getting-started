@@ -25,7 +25,7 @@ class Greeting {
     suspend fun greeting(): String {
         val rockets: List<RocketLaunch> = httpClient.get("https://api.spacexdata.com/v4/launches").body()
         val lastSuccessLaunch = rockets.last { it.launchSuccess == true }
-        return "Guess what it is! > ${Platform().platform.reversed()}!" +
+        return "Guess what it is! > ${Platform().platform}!" +
                 "\nThere are only ${daysUntilNewYear()} left until New Year! 🎅🏼 " +
                 "\nThe last successful launch was ${lastSuccessLaunch.launchDateUTC} 🚀"
     }
