@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tv: TextView = findViewById(R.id.text_view)
-        tv.text = "Loading..."
+        tv.text = getString(R.string.loading)
 
         scope.launch {
             kotlin.runCatching {

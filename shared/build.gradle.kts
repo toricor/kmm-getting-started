@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.7.10"
+    kotlin("plugin.serialization") version "1.7.21"
     id("com.android.library")
 }
 
@@ -18,7 +18,7 @@ kotlin {
     }
 
     sourceSets {
-        val ktorVersion = "2.1.3"
+        val ktorVersion = "2.2.1"
 
         val commonMain by getting {
             dependencies {

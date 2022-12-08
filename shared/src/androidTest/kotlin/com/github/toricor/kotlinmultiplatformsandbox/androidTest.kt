@@ -1,5 +1,6 @@
 package com.github.toricor.kotlinmultiplatformsandbox
 
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
